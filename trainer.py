@@ -90,9 +90,9 @@ class FashionMNISTTrainer:
         print('''
         |Training completed succesfully|
         Best epoch={}
-        Best loss={}
-        Best Accuracy={}
-        '''.format(self.best_epoch, self.best_loss, self.best_acc))
+        Best loss={:.4f}
+        Best Accuracy={:2.2f}
+        '''.format(self.best_epoch, self.best_loss, self.best_acc * 100))
 
 
 
