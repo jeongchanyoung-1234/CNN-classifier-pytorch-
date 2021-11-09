@@ -11,8 +11,11 @@ def define_argparse():
     p = argparse.ArgumentParser()
 
     p.add_argument('--batch_size', type=int, default=256)
+    p.add_argument('--hidden_size', type=int, default=128)
     p.add_argument('--n_kernels', type=int, default=16)
-    p.add_argument('--kernel_size', type=int, default=5),
+    p.add_argument('--kernel_size', type=int, default=5)
+    p.add_argument('--pool_size', type=int, default=2)
+    p.add_argument('--dropout', type=float, default=.5)
     p.add_argument('--epochs', type=int, default=10)
     p.add_argument('--optimizer', type=str, default='adam')
     p.add_argument('--lr', type=float, default=1e-3)
